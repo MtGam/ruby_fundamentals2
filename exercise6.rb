@@ -4,6 +4,7 @@ def display_list(list)
   list.each do |grocery|
     puts "* #{grocery}"
   end
+  puts "***"
 end
 display_list(grocery_list)
 
@@ -21,4 +22,6 @@ puts "The second item on the list is #{grocery_list[1]}."
 
 display_list(grocery_list.sort)
 
-grocery_list.delete_at(3)
+grocery_list.delete("salmon")
+
+display_list(grocery_list)
