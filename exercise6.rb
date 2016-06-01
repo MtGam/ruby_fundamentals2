@@ -11,3 +11,5 @@ if grocery_list == "bananas"
 else
   puts "You need to pick up bananas."
 end
+
+puts "The second item on the list is #{grocery_list[1]}."
